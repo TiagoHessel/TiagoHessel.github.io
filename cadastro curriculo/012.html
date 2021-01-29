@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form name="cadastro" method="POST" action="cadastrar.php">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:</label><input type="text" name="nome" id="nome">
+            <label for="idade">Idade:</label><input type="number" name="idade" id="idade">
+        </fieldset>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <label for="escolaridade">Escolaridade:</label>
+            <select name="escolaridade" id="escolaridade">
+                <option value="em"> Ensino Médio </option>
+                <option value="nt"> Nível Técnico </option>
+                <option value="ns"> Nível Superior </option>
+            </select>
+            <br>
+            <label>Área de atuação
+                <input type="radio" name="cargo" value="1" checked> Gerência
+                <input type="radio" name="cargo" value="2"> Financeiro
+                <input type="radio" name="cargo" value="3"> Recepção
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Sobre você</legend>
+            <textarea name="voce" id="voce"></textarea>
+        </fieldset>
+        <button type="reset">Limpar</button>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
