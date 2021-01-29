@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>Pedra Papel Tesoura</title>
+        <link rel="stylesheet" href="estilo.css" type="text/css" />
+    </head>
+    <body>
+        <header><h1>Pedra Papel Tesoura</h1></header>
+
+        <div class="placar">
+            <div id="usuario" class="badge">USER</div>
+            <div id="computador" class="badge">COMP</div>
+            <span id="pontos-usuario">0</span> : <span id="pontos-computador">0</span>
+        </div>
+
+        <div class="resultado">
+            <span id="escolha-usuario">U</span>
+            <span id="escolha-x">&#x1F91D</span>
+            <span id="escolha-computador">C</span>
+            <p id="texto-resultado">Bom Jogo</p>
+        </div>
+
+        <div class="opcoes">
+            <div id="pedra" class="opcao" onclick="game('Pedra', '&#x1F44A;');"><img src="pedra.png"></div>
+            <div id="papel" class="opcao" onclick="game('Papel', '&#x1F590;');"><img src="papel.png"></div>
+            <div id="tesoura" class="opcao" onclick="game('Tesoura', '&#x270C;');"><img src="tesoura.png"></div>
+
+            <p class="mensagem-escolha">Escolha sua jogada.</p>
+        </div>
+
+        <script src="funcoes.js" type="text/javascript"></script>
+    </body>
+</html>
