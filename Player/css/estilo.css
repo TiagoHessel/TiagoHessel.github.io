@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 200;
+    background: url(../img/Marshmellob.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.player {
+    width: 400px;
+    height: 680px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.5), -3px --3px 50px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.icones-topo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.icones-topo a {
+    color: #fff;
+    font-size: 1.3em;
+}
+
+.icones-topo a:hover {
+    color: #b9b6b6;
+    transition: all 0.2s ease-in-out;
+}
+
+.imagem-principal {
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.imagem-capa {
+    margin: 50px 0 0 55px;
+    width: 70%;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.imagem-capa:hover {
+    box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.5), -3px -3px 50px rgba(0, 0, 0, 0.5);
+}
+
+.texto {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.titulo {
+    font-size: 2.6em;
+}
+
+.artista {
+    font-size: 1.4em;
+}
+
+.tempo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+}
+
+.tempo a {
+    color: #fff;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.barra-tempo {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 5px 0;
+    position: relative;
+}
+
+.botoes-player {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.botoes-player a {
+    color: #fff;
+    font-size: 1.8em;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.botoes-player a:hover {
+    color: #b9b6b6;
+}
+
+.tocar,
+.pausar {
+    border: 2px solid #fff;
+    padding: 15px 22px;
+    border-radius: 50%;
+}
+
+.pausar{
+    display: none;
+}

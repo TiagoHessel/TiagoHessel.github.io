@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Player</title>
+</head>
+<body onload="TrocarMusica();">
+        <section class="player">
+            <div class="container">
+                <!-- ============= icones do topo ================== -->
+                <div class="icones-topo">
+                    <a href="#"><i class="far fa-heart"></i></a>
+                    <a href="#"><i class="fa fa-plus"></i></a>
+                </div>
+                
+                <!-- ============== imagem principal ================= -->
+                <div class="imagem-principal">
+                     <img src="img/Marshmello.jpg" alt= "" class="imagem-capa"> 
+                </div>
+
+                <!-- ================ Nome da música e artista =============== -->
+                <div class="texto">
+                    <h1 class="titulo">Alone</h1>
+                    <h4 class="artista">Marshmello</h4>
+                </div>
+
+                <!-- =============== tempo de música ===================== -->
+                <div class="tempo">
+                    <a href="#" id="tempo-atual">0:00</a>
+                    <a href="#" id="tempo-total">0:00</a>
+                </div>
+                <progress value="0" max="500" class="barra-tempo"></progress>
+
+                <!-- ================ botões do player ================== -->
+                <div class="botoes-player">
+                    <a href="#" onclick="TrocarMusica();"><i class="fa fa-backward"></i></a>
+                    <a href="#" class="tocar" onclick="TocarMusica();"><i class="fa fa-play"></i></a>
+                    <a href="#" class="pausar" onclick="PausarMusica();"><i class="fa fa-pause"></i></a>
+                    <a href="#" onclick="TrocarMusica();"><i class="fa fa-forward"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <audio id="componente-musicas" ontimeupdate="AtualizaTempo();" onloadeddata="AtualizarTempoTotalMusica();"></audio>
+    <script src="js/funcoes.js"></script>
+    
+</body>
+</html>
